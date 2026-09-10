@@ -1,5 +1,7 @@
+import TabsComponent from './components/TabsComponent';
+
 function App() {
-  return <div>{/* TabsContainer */}</div>;
+  return <TabsComponent />;
 }
 
 export default App;
