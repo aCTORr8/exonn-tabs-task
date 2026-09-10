@@ -1,0 +1,62 @@
+.tabs-overflow {
+  position: relative;
+  height: 100%;
+  flex-basis: 40px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.tabs-overflow-button {
+  display: grid;
+  width: 40px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  place-items: center;
+  color: #fff;
+  background-color: #4690e2;
+  border: 0;
+  cursor: pointer;
+}
+
+.tabs-overflow-button:hover,
+.tabs-overflow-button:focus-visible {
+  color: #fff;
+  background-color: #357fcf;
+}
+
+.tabs-dropdown {
+  position: absolute;
+  top: 49px;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  min-width: 220px;
+  max-height: 300px;
+  padding: 4px 0;
+  flex-direction: column;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  box-shadow: 0 8px 20px rgb(9 30 66 / 18%);
+}
+
+.tab-item--dropdown {
+  width: 100%;
+  height: 49px;
+  padding: 0 12px;
+  border-top: 0;
+}
+
+.tab-item--dropdown::after {
+  display: none;
+}
+
+.tab-item--dropdown .tab-main-button {
+  flex: 1 1 auto;
+}
+
+.tab-item--dropdown .tab-close-button {
+  margin-left: auto;
+}

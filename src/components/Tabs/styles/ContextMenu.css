@@ -1,0 +1,33 @@
+.tab-context-menu {
+  position: absolute;
+  z-index: 1000;
+  min-width: 170px;
+  padding: 6px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgb(9 30 66 / 22%);
+}
+
+.tab-context-menu-item {
+  display: flex;
+  width: 100%;
+  padding: 8px 10px;
+  align-items: center;
+  gap: 8px;
+  color: #172b4d;
+  font: inherit;
+  text-align: left;
+  white-space: nowrap;
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tab-context-menu-item:hover,
+.tab-context-menu-item:focus-visible {
+  color: #0052cc;
+  background: #f4f5f7;
+  outline: none;
+}

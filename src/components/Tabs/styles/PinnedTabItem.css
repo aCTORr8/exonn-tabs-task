@@ -1,0 +1,40 @@
+.tab-item--pinned {
+  position: relative;
+  width: 40px;
+  padding: 0;
+  justify-content: center;
+}
+
+.tab-item--pinned .tab-main-button {
+  width: 100%;
+  justify-content: center;
+}
+
+.custom-tooltip {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  z-index: 100;
+  display: none;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  color: #172b4d;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  white-space: nowrap;
+  background: #fff;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgb(9 30 66 / 20%);
+  pointer-events: none;
+}
+
+.tab-item--pinned:hover .custom-tooltip {
+  display: flex;
+}
+
+.custom-tooltip svg {
+  color: #42526e;
+}
